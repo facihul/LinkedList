@@ -63,6 +63,26 @@ public class LinkedList {
 	   }
    }
    
+   public void insertNode(int index, Integer data){
+	   if(index <= 0 || index > size) return;
+	   else if( index == 1 ) prepend(data);
+	   else if( index == size) append(data);
+	   else{
+		   Node n = new Node(data);
+		   Node newNode = header.next;
+		   int count  = 1;
+		   while(count != index-1){
+			   newNode = newNode.next;
+			   count ++;
+		   }
+		   Node temp = newNode.next;
+		   newNode.next = n;
+		   n.next = temp;
+		   size++;
+	   }
+		   
+  }
+	   
    public int getSize(){
 	   
 	  return size; 
