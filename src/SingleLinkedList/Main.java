@@ -37,12 +37,19 @@ public class Main {
 		System.out.println(list);
 		System.out.println(list.getSize());
 		
-		list.insertNode(1, 4);
-		list.insertNode(3, 1);
-		list.insertNode(5, 8);
+		list.insertNode(1, 40);
+		list.insertNode(3, 10);
+		list.insertNode(5, 80);
 		
 		System.out.println(list);
 		System.out.println(list.getSize());
+		
+		list.removeNode(1, 40);
+		list.removeNode(4, 7);
+		
+		System.out.println(list);
+		System.out.println(list.getSize());
+		
 
 	}
 
