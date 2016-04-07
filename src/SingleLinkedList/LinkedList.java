@@ -24,6 +24,7 @@ public class LinkedList {
 		size++;
 	   }
    }
+   
    public void append(Integer data){
 	   Node n = new Node(data);
 	   if(size == 0) {
@@ -36,6 +37,14 @@ public class LinkedList {
 		   size++;
 	   }
    }
+   
+   public void removeNode(){
+	   if(size != 0){
+	   header.next = header.next.next;
+	   size--;
+	   }
+   }
+   
    public int getSize(){
 	   
 	  return size; 
