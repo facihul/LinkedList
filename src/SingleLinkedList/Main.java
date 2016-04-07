@@ -25,8 +25,14 @@ public class Main {
 		System.out.println(list.getSize());
 		
 		
-		list.removeNode();
-		list.removeNode();
+		list.removeFirstNode();
+		list.removeFirstNode();
+		
+		System.out.println(list);
+		System.out.println(list.getSize());
+		
+		list.removeLastNode();
+		list.removeLastNode();
 		
 		System.out.println(list);
 		System.out.println(list.getSize());

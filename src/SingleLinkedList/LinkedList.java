@@ -38,10 +38,28 @@ public class LinkedList {
 	   }
    }
    
-   public void removeNode(){
+   public void removeFirstNode(){
 	   if(size != 0){
 	   header.next = header.next.next;
 	   size--;
+	   }
+   }
+   
+   public void removeLastNode(){
+	   if(size == 1){
+	   header.next = null;
+	   lastnode = header; 
+	   size--;
+	   } else if (size != 0) {
+		  Node n = header.next;
+		  int count = 1;
+		  while(count != size-1){
+			  n=n.next;
+			  count++;
+	      }
+		  lastnode = n;
+		  lastnode.next = null;
+		  size--;
 	   }
    }
    
