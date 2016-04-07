@@ -1,6 +1,6 @@
 package SingleLinkedList;
 /*
- * 
+ * Node creation 
  * */
 
 public class Node {

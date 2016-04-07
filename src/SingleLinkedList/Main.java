@@ -15,8 +15,14 @@ public class Main {
 		list.prepend( 3 );
 		list.prepend( 4 );
 		System.out.println(list);
-		System.out.print(list.getSize());
+		System.out.println(list.getSize());
 		
+		list.append(6);
+		list.append(7);
+    	list.append(8);
+
+    	System.out.println(list);
+		System.out.println(list.getSize());
 
 	}
 
